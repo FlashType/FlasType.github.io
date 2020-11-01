@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Form Validation</title>
+</head>
+
+<body>
+	<div class="modal">
+		<div class="modal__wrapper">
+			<div class="modal__wrapper-inner">
+				<form id="form" action="">
+					<div class="form__element">
+						<label for="name" class="form__label">Name<span class="requered">*</span></label>
+						<input tabindex="1" class="form__input" id="email" type="text" placeholder="Your name" required name="">
+					</div>
+					<div class="form__element">
+						<label for="email" class="form__label">Email<span class="requered">*</span></label>
+						<input tabindex="2" class="form__input" id="email" type="email" placeholder="youremail@mail.com" required name="email">
+					</div>
+					<div class="form__element">
+						<label for="tel" class="form__label">Phone<span class="requered">*</span></label>
+						<input tabindex="3" class="form__input" id="tel" type="tel" placeholder="xxx-xx-xx"  required name="tel">
+					</div>
+					<div class="form__element">
+						<label for="text" class="form__label">Send a message</label>
+						<textarea tabindex="4" name="text" id="text" maxlength="200" placeholder="max-length: 200 characters"></textarea>
+					</div>
+					<button tabindex="5	" class="submit" type="submit">Send!</button>
+				</form>
+				<div class="message-box">Message:</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
